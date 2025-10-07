@@ -1,0 +1,19 @@
+#Core Machine Learning & Data Handling
+pandas==2.3.3
+numpy
+scikit-learn==1.7.2 # Pinning the version is crucial for model consistency
+
+#API Layer for Model Serving
+fastapi
+uvicorn[standard] # The web server for FastAPI
+
+#Streaming (Kafka) & Feature Store (Redis)
+kafka-python
+redis
+
+#MLOps (Experiment Tracking) & Data Lake (S3-like) SDK
+mlflow
+boto3 # The AWS SDK for Python, used to connect to MinIO (S3-compatible)
+
+#Utilities for managing environment variables (good practice)
+python-dotenv
